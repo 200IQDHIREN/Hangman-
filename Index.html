@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-controls">
+    <select id="categorySelect">
+      <option value="all">All Categories</option>
+      <option value="Programming">Programming</option>
+      <option value="Web">Web</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="UI">UI</option>
+    </select>
+  </div>
+
+  <div class="game">
+    <div class="game-header">
+      <div class="title">Hangman</div>
+      <div class="status" id="status">Guess the word</div>
+    </div>
+
+    <canvas id="hangmanCanvas" width="200" height="200"></canvas>
+
+    <div class="word" id="word"></div>
+
+    <div class="info-row">
+      <div>Lives: <span id="lives"></span></div>
+      <div>Category: <span id="category"></span></div>
+    </div>
+
+    <div class="wrong-letters" id="wrongLetters"></div>
+
+    <div class="keyboard" id="keyboard"></div>
+
+    <div class="footer">
+      <button class="btn" id="resetBtn">New word</button>
+      <div class="result" id="result"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
